@@ -1,1 +1,4 @@
 猫でもわかるC言語プログラミングのサンプルコードを写経する。
+
+%[flagd][width].[precision]{typeのプレフィックス}type
+
