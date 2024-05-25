@@ -4,7 +4,7 @@ int main(void)
 {
     int a;
     int b;
-    a = 2;
+    a = 5;
     b = 3;
     double c;
 

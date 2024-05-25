@@ -2,3 +2,60 @@
 
 %[flagd][width].[precision]{typeのプレフィックス}type
 
+int scanf(
+	const char *format [,argument]...
+);
+
+int getchar(void);
+
+2つの文字列を比較
+int strcmp(
+	const char *string1,
+	const char *string2
+);
+
+size_t strlen(
+	const char *string
+);
+
+入力から文字列を読み込む。空白やエンターキーも。⇒最後を'\n'に置き換える
+char *fgets(
+	char *buffer, int len, FILE *fp
+);
+
+指定された文字が含まれるか
+char *strchr(
+	const char *string,
+	int c
+);
+
+char *strcpy(
+	char *strDestination,
+	const char *strSource
+);
+
+char *strcat(
+	char *strDestination,
+	const char *strSource
+);
+
+書式にのっとって変換した出力を文字列に格納する
+int sprintf(
+	char *buffer,
+	const char *format [,argument] ...
+);
+
+int atoi(
+	const char *string
+);
+
+double atof(
+	const char *string
+);
+
+指定した文字でバッファを埋め尽くす
+void *memset(
+	void *dest,
+	int c,
+	size_t count
+)
