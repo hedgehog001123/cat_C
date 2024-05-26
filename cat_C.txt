@@ -59,3 +59,117 @@ void *memset(
 	int c,
 	size_t count
 )
+
+FILE *fopen(
+	const char *filename,
+	const char *mode
+);
+
+//fclose成功したら0を返す
+int *fclose(
+	FILE *stream
+);
+
+ストリームに整形データを書き込む
+int fprintf(
+	FILE *stream,
+	const char *format [,argument ]...
+);
+
+ストリームから整形済みデータを読み込む
+int fscanf(
+	FILE *stream,
+	const char *format [, argument]...
+);
+※一般的なテキストファイルを読み込むには、1文字読んでは1文字表示する。という方式のほうが安全。
+
+ストリームから1文字ずつ読み込む。
+int fgetc(
+	FILE *stream
+);
+
+int putc(
+	int c,
+	FILE *stream
+);
+
+int fseek(
+	FILE *stream,
+	long offset,
+	int origin
+);
+
+文字列を検索する
+char *strstr(
+	const char *string,
+	const char *strCharSet
+);
+
+size_t fwrite(
+	const void *buffer,
+	size_t size,
+	size_t count,
+	FILE *stream
+);
+
+size_t fread(
+	void *buffer,
+	size_t size,
+	size_t count,
+	FILE *stream
+);
+
+int printf(
+	const char *format [,argument]...
+);
+
+void *malloc(
+	size_t size
+);
+
+void free(
+	void *memblock
+);
+
+void perror(
+	const char *string
+);
+
+メモリ配列を確保し、0で初期化
+void *calloc(
+	size_t num,
+	size_t size
+);
+
+void *realloc(
+	void *memblock,
+	size_t size
+);
+
+void exit(
+	int status
+);
+
+time_t time(
+	time_t *timer
+);
+
+struct tm *localtime(
+	const time_t *timer
+);
+
+struct tm {
+	int tm_sec;
+	int tm_min;
+	int tm_hour;
+	int tm_mday;
+	int tm_mon;
+	int tm_year;
+	int tm_wday;
+	int tm_yday;
+	int tm_isdst;
+}
+
+char *asctime(
+	const struct tm *timeptr
+);
